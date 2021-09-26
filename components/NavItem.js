@@ -1,7 +1,13 @@
-export default function NavItem({ children }) {
+export default function NavItem({ href, children, scheme }) {
+  const schemes = {
+    light: 'text-white text-opacity-60 hover:text-opacity-100',
+    dark: 'text-black',
+  };
+
+  const pickedSchema = schemes[scheme];
   return (
-    <li className='text-white text-lg text-opacity-60 font-semibild'>
-      <a>{children}</a>
+    <li className={`text-lg  transition font-semibild ${pickedSchema}`}>
+      <a href={href}>{children}</a>
     </li>
   );
 }

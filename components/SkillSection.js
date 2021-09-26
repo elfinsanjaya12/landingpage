@@ -4,83 +4,79 @@ import SkillCard from './SkillCard';
 
 export default function SectionSkill() {
   return (
-    <section className='py-28 bg-primarygray'>
-      <div className='container mx-auto'>
+    <section className='py-28 bg-primarygray' id='skills'>
+      <div className='container mx-auto px-10 2xl:px- 0'>
         <SectionTitle>Skills</SectionTitle>
         <SectionParagraph>Beberapa kemampuan saya</SectionParagraph>
-        <div className='flex -mx-4 mt-20'>
-          <div className='w-4/12 px-4'>
+        <div className='flex -mx-4 mt-20 flex-wrap'>
+          <div className='md:w-4/12 w-full px-4 pb-8'>
             <SkillCard
-              name='Javascript'
-              lavel='Lanjutan'
+              name='JavaScript'
+              level='Lanjutan'
               image='/javascript.svg'
               imageClassName='h-16 rounded-full'
             />
           </div>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8'>
             <SkillCard
               name='React JS'
-              lavel='Menengah'
+              level='Menengah'
               image='/react.svg'
-              imageClassName='h-16 rounded-full'
+              imageClassName='h-16'
             />
           </div>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8'>
             <SkillCard
-              name='Node JS '
-              lavel='Lanjutan'
+              name='Node JS'
+              level='Lanjutan'
               image='/nodejs.svg'
-              imageClassName='h-16 rounded-full'
+              imageClassName='h-16'
             />
           </div>
-        </div>
-        <div className='flex -mx-4 mt-4'>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8'>
             <SkillCard
-              name='Node JS '
-              lavel='Lanjutan'
+              name='Node JS'
+              level='Lanjutan'
               image='/nodejs.svg'
-              imageClassName='h-16 rounded-full'
+              imageClassName='h-16'
             />
           </div>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8'>
             <SkillCard
-              name='Javascript'
-              lavel='Lanjutan'
+              name='JavaScript'
+              level='Lanjutan'
               image='/javascript.svg'
               imageClassName='h-16 rounded-full'
             />
           </div>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8'>
             <SkillCard
               name='React JS'
-              lavel='Menengah'
+              level='Menengah'
               image='/react.svg'
-              imageClassName='h-16 rounded-full'
+              imageClassName='h-16'
             />
           </div>
-        </div>
-        <div className='flex -mx-4 mt-4'>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8 md:pb-0'>
             <SkillCard
               name='React JS'
-              lavel='Menengah'
+              level='Menengah'
               image='/react.svg'
-              imageClassName='h-16 rounded-full'
+              imageClassName='h-16'
             />
           </div>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8 md:pb-0'>
             <SkillCard
-              name='Node JS '
-              lavel='Lanjutan'
+              name='Node JS'
+              level='Lanjutan'
               image='/nodejs.svg'
-              imageClassName='h-16 rounded-full'
+              imageClassName='h-16'
             />
           </div>
-          <div className='w-4/12 px-4'>
+          <div className='md:w-4/12 w-full px-4 pb-8 md:pb-0'>
             <SkillCard
-              name='Javascript'
-              lavel='Lanjutan'
+              name='JavaScript'
+              level='Lanjutan'
               image='/javascript.svg'
               imageClassName='h-16 rounded-full'
             />

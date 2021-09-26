@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import 'tailwindcss/tailwind.css';
+import '../styles/globals.css';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {

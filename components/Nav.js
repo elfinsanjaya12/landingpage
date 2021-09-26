@@ -1,13 +1,26 @@
-import React from 'react';
 import NavItem from './NavItem';
 
-export default function Nav() {
+export default function Nav({ dir, scheme }) {
+  const dirs = {
+    horizontal: 'justify-center space-x-10',
+    vertical: 'flex-col space-y-10',
+  };
+
+  const pickedDir = dirs[dir];
   return (
-    <ul className='flex justify-center space-x-10'>
-      <NavItem>Profile</NavItem>
-      <NavItem>Skills</NavItem>
-      <NavItem>Projects</NavItem>
-      <NavItem>Contact</NavItem>
+    <ul className={`flex ${pickedDir}`}>
+      <NavItem scheme={scheme} href='#profile'>
+        Profile
+      </NavItem>
+      <NavItem scheme={scheme} href='#skills'>
+        Skills
+      </NavItem>
+      <NavItem scheme={scheme} href='#projects'>
+        Projects
+      </NavItem>
+      <NavItem scheme={scheme} href='#contact'>
+        Contact
+      </NavItem>
     </ul>
   );
 }
